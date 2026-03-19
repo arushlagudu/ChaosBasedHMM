@@ -1,6 +1,6 @@
 # Chaos-Based Regime Detection in Financial Markets
 
-A research framework that combines **chaos-theoretic metrics** with **Hidden Markov Models (HMMs)** to detect and classify financial market regimes — identifying when markets are chaotic, trending, or mean-reverting.
+A research framework that combines **chaos-theoretic metrics** with **Hidden Markov Models (HMMs)** to detect and classify financial market regimes, identifying when markets are chaotic, trending, or mean-reverting.
 
 Unlike traditional regime-switching models that rely solely on returns and volatility, this approach augments the HMM feature set with three chaos metrics (Lyapunov exponent, Hurst exponent, Permutation Entropy), enabling richer and more economically meaningful regime classification. Statistical rigor is ensured through IAAFT surrogate testing.
 
