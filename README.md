@@ -45,9 +45,9 @@ chaos_hmm_project/
   - **Hurst Exponent** (Detrended Fluctuation Analysis) — measures long-range dependence and persistence
   - **Permutation Entropy** (Bandt-Pompe) — quantifies time series complexity and randomness
 - **Gaussian HMM** with 3 hidden states mapped to economically interpretable regimes:
-  - 🔴 **Chaotic** — high Lyapunov, high entropy, unpredictable dynamics
-  - 🟢 **Trending** — high Hurst, persistent price movements
-  - 🔵 **Mean-Reverting** — low Hurst, prices revert to equilibrium
+  - **Chaotic** — high Lyapunov, high entropy, unpredictable dynamics
+  - **Trending** — high Hurst, persistent price movements
+  - **Mean-Reverting** — low Hurst, prices revert to equilibrium
 - **IAAFT surrogate testing** to statistically validate that observed chaos is not an artifact of linear stochastic structure
 - **Backtesting engine** with transaction costs, comparing the chaos-augmented strategy against buy-and-hold
 - **20 major U.S. equities** analyzed (2010–2025): SPY, AAPL, MSFT, GOOGL, AMZN, JPM, BAC, XOM, JNJ, PFE, WMT, DIS, TSLA, NVDA, META, V, MA, UNH, HD, PG
@@ -257,7 +257,7 @@ The chaos-augmented regime strategy goes long in trending regimes, takes contrar
 
 ### Regime Distribution Across Assets
 
-| Asset | N Obs | Date Range | 🔴 Chaotic % | 🟢 Trending % | 🔵 Mean-Reverting % |
+| Asset | N Obs | Date Range |  Chaotic % |  Trending % |  Mean-Reverting % |
 |:-----:|:-----:|:----------:|:------------:|:-------------:|:-------------------:|
 | SPY | 3,575 | 2010-12-30 to 2025-03-18 | 56.4% | 30.6% | 13.0% |
 | AAPL | 3,575 | 2010-12-30 to 2025-03-18 | 64.0% | 17.8% | 18.2% |
@@ -282,7 +282,7 @@ The chaos-augmented regime strategy goes long in trending regimes, takes contrar
 
 ### Regime Characteristics (Mean Feature Values per Regime)
 
-#### 🔴 Chaotic Regime
+####  Chaotic Regime
 
 | Asset | Mean Return | Std Return | Mean Vol | Mean Lyapunov | Mean Hurst | Mean Perm Entropy |
 |:-----:|:----------:|:----------:|:--------:|:-------------:|:----------:|:-----------------:|
@@ -332,7 +332,7 @@ The chaos-augmented regime strategy goes long in trending regimes, takes contrar
 | HD | 0.0579% | 1.6206% | 1.5949% | 0.1378 | 0.5991 | 0.8903 |
 | PG | 0.0255% | 0.7762% | 0.7689% | 0.1386 | 0.5998 | 0.8757 |
 
-#### 🔵 Mean-Reverting Regime
+####  Mean-Reverting Regime
 
 | Asset | Mean Return | Std Return | Mean Vol | Mean Lyapunov | Mean Hurst | Mean Perm Entropy |
 |:-----:|:----------:|:----------:|:--------:|:-------------:|:----------:|:-----------------:|
